@@ -1,0 +1,135 @@
+.cart-container{
+  form.form-cart{
+    float: unset;
+    .cart.items{
+      .item-info{
+        box-shadow: 0 5px 11px rgba(0,0,0,0.2), 0 1px 0 rgba(0,0,0,0.0);
+        .item{
+          padding: 0;
+          width: 40%;
+
+          .product-image-container{
+            width: 88px !important;
+          }
+        }
+        .col.qty{
+          width: 112px;
+          border-right: 1px solid #e3e2e2;
+          .control.qty{
+            p{
+              text-align: center;
+              select{
+                width: 90px;
+                background-color: #e4e4e4;
+              }
+            }
+          }
+        }
+        .subtotal{
+          width: 108px;
+          text-align: center;
+          border-right: 1px solid #e3e2e2;
+          padding: 30px 0 0 0;
+          .price{
+            font-size: 2.0rem;
+            color: #59c1d6;
+            font-weight: unset;
+          }
+        }
+        .remove{
+          .action-edit{
+            display: none;
+          }
+          .action-delete{
+            img{
+              margin-right: 20px;
+            }
+            &:before{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cart-discount{
+    width: 30%;
+    .coupon{
+      .field{
+        display: unset;
+        .control{
+          margin-bottom: 11px;
+         .input-text{
+           width: 182px;
+           height: 35px;
+           background-color: #e4e4e4;
+           text-transform: lowercase;
+         }
+        }
+      }
+      .actions-toolbar{
+        display: unset;
+        .action.apply.primary{
+          width: 182px;
+          height: 35px;
+          background-color: #666666;
+          border: 1px solid #666666;
+          &:hover{
+            background-color: #333333;
+          }
+        }
+      }
+    }
+  }
+  .cart-summary{
+    .cart-totals{
+      .grand.totals{
+        .price{
+          color: #59c1d6;
+        }
+      }
+    }
+  }
+}
+
+// delivery
+.delivery-container{
+  .title-vodafone{
+    text-align: center;
+    font-weight: 400;
+    margin-right: 20%;
+  }
+  .del{
+    width: auto;
+    float: left;
+    border-right: 1px solid #e3e2e2;
+    padding: 0 20px;
+    font-size: 12px;
+    height: auto;
+    &:last-child{
+      border-right: none;
+    }
+  }
+  .delivery-free{
+    img{
+      padding-bottom: 35px;
+    }
+  }
+  .delivery-workdays{
+    img{
+      width: 40px;
+      padding-bottom: 28px;
+    }
+  }
+  .delivery-back{
+    img{
+      padding-bottom: 39px;
+    }
+  }
+  .delivery-pay{
+    img{
+      width: 35px;
+      padding-bottom: 27px;
+    }
+  }
+}

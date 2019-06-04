@@ -1,0 +1,19 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Checkout\Block\Cart\Item\Renderer\Actions\Remove */
+?>
+<a href="#"
+   title="<?= $block->escapeHtml(__('Remove item')) ?>"
+   class="action action-delete"
+   data-post='<?= /* @escapeNotVerified */ $block->getDeletePostJson() ?>'>
+    <img src='<?php echo $this->getViewFileUrl('images/delivery/delete.png'); ?>' alt="image-icon">
+    <span>
+        <?= /* @escapeNotVerified */ __('Remove item') ?>
+    </span>
+</a>
